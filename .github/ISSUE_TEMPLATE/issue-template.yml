@@ -1,0 +1,49 @@
+name: Output review request
+description: Use to track review progress for any output requests
+title: 'Review request: [TITLE]'
+body: 
+  - type: input
+    attributes:
+      label: Requester
+      description: Who requested the review?
+      placeholder: John Smith
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: GitHub repo
+      description: Please add a link to the github repo that relates to this request. You can find it within the submitted form.
+      placeholder: Example - https://github.com/opensafely/SRO-Measures
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Workspace
+      description: Please add a link to the workspace that relates to this request. You can find it within the submitted form.
+      placeholder: Example - https://jobs.opensafely.org/datalab/service-restoration-observatory/sro-measures/
+    validations:
+      required: true
+  - type: checkboxes
+    id: type
+    attributes:
+      label: Type
+      description: Please add a label indicating whether this is an internal or external review.
+      options:
+        - label: I have added a label
+          required: true
+  - type: checkboxes
+    id: team
+    attributes:
+      label: Team
+      description: If this is an internal review, please add a label  which team the review is for.
+      options:
+        - label: I have added a label
+          required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Please upload the completed review form by dragging and dropping the file in this box. Add any other details relevant to the review that are not in the review form.
+  - type: markdown
+    attributes:
+      value: "**When you start a review please react to this message with :eyes:. When you have completed your review add a :thumbsup:. Once two reviews have been completed and a response has been sent to the requester, please close the issue.**"
