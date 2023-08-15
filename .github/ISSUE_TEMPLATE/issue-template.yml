@@ -9,20 +9,6 @@ body:
       placeholder: 
     validations:
       required: true
-  - type: textarea
-    attributes:
-      label: Sensitivity versus specificity
-      description: If possible, give an idea of what the balance should be (e.g. I only want to identify confirmed cases of COVID-19 versus I want to identify anyone with even a potential COVID-19 symptom).
-      placeholder: 
-    validations:
-      required: false
-  - type: textarea
-    attributes:
-      label: Existing relevent codelists
-      description: Are you aware of any existing similar codelists? Why aren't these suitable to reuse?
-      placeholder: 
-    validations:
-      required: false
   - type: checkboxes
     id: codesys
     attributes:
@@ -34,6 +20,20 @@ body:
         - label: ICD-10
         - label: Other (please detail in User Requirements)
           required: false
+  - type: textarea
+    attributes:
+      label: Sensitivity versus specificity
+      description: If possible, give an idea of what the balance should be (e.g. I only want to identify confirmed cases of COVID-19 versus I want to identify anyone with even a potential COVID-19 symptom).
+      placeholder: N/A
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Existing relevent codelists
+      description: Are you aware of any existing similar codelists? Why aren't these suitable to reuse?
+      placeholder: N/A
+    validations:
+      required: false
   - type: checkboxes
     id: type
     attributes:
