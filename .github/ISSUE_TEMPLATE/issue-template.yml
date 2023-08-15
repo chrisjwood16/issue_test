@@ -43,7 +43,7 @@ body:
       value: "*The sections below will usually be filled in during construction process rather than at initial request, leave blank if you are unsure*"
   - type: textarea
     attributes:
-      label: Search terms / synonyms
+      label: Search terms / synonyms / search strategy
       description: Any suggested search terms / synonyms
       placeholder: Leave blank if unsure
     validations:
