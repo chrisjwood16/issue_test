@@ -9,17 +9,6 @@ body:
       placeholder: John Smith
     validations:
       required: true
-  - type: checkboxes
-    id: type
-    attributes:
-      label: Coding system
-      description: Please select the coding system required (See this blog for further info on coding systems if needed - https://www.bennett.ox.ac.uk/blog/2023/06/an-introduction-to-clinical-codes-and-terminology-systems/.
-      options:
-        - label: SNOMED CT
-        - label: dm+d
-        - label: ICD-10
-        - label: Other (please detail in User Requirements)
-          required: false
   - type: textarea
     attributes:
       label: Sensitivity versus specificity
@@ -27,7 +16,6 @@ body:
       placeholder: 
     validations:
       required: false
-
   - type: textarea
     attributes:
       label: Existing relevent codelists
@@ -35,7 +23,6 @@ body:
       placeholder: 
     validations:
       required: false
-
   - type: checkboxes
     id: type
     attributes:
@@ -44,8 +31,6 @@ body:
       options:
         - label: I have added a label
           required: true
-
-
   - type: textarea
     attributes:
       label: Search terms / synonyms
@@ -53,7 +38,6 @@ body:
       placeholder: 
     validations:
       required: false
-
   - type: checkboxes
     id: team
     attributes:
