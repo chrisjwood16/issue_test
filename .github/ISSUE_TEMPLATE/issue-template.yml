@@ -6,13 +6,13 @@ body:
     attributes:
       label: User Requirements
       description: Give an idea of what the purpose of the codelist is. Is there a particular study it is to be used in? What are you hoping to identify using the codelist? Will it be used along or in combination with other codelists? Generally the more information the better.
-      placeholder: John Smith
+      placeholder: 
     validations:
       required: true
   - type: textarea
     attributes:
       label: Sensitivity versus specificity
-      description: Give an idea of what the balance should be (e.g. I only want to identify confirmed cases of COVID-19 versus I want to identify anyone with even a potential COVID-19 symptom).
+      description: If possible, give an idea of what the balance should be (e.g. I only want to identify confirmed cases of COVID-19 versus I want to identify anyone with even a potential COVID-19 symptom).
       placeholder: 
     validations:
       required: false
@@ -23,6 +23,17 @@ body:
       placeholder: 
     validations:
       required: false
+  - type: checkboxes
+    id: type
+    attributes:
+      label: Coding system
+      description: Please select the coding system required (See this blog for further info on coding systems if needed - https://www.bennett.ox.ac.uk/blog/2023/06/an-introduction-to-clinical-codes-and-terminology-systems/.
+      options:
+        - label: SNOMED CT
+        - label: dm+d
+        - label: ICD-10
+        - label: Other (please detail in User Requirements)
+          required: false
   - type: checkboxes
     id: type
     attributes:
