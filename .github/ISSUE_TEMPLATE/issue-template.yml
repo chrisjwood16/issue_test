@@ -1,41 +1,64 @@
-name: Output review request
-description: Use to track review progress for any output requests
-title: 'Review request: [TITLE]'
+name: Clinical codelist request
+description: Use to record condition/procedure/test codelists
+title: '[Delete as appropriate] *CONDITION*/*PROCEDURE*/*TEST*: [TITLE]'
 body: 
-  - type: input
+  - type: textarea
     attributes:
-      label: Requester
-      description: Who requested the review?
+      label: User Requirements
+      description: Give an idea of what the purpose of the codelist is. Is there a particular study it is to be used in? What are you hoping to identify using the codelist? Will it be used along or in combination with other codelists? Generally the more information the better.
       placeholder: John Smith
-    validations:
-      required: true
-  - type: input
-    attributes:
-      label: GitHub repo
-      description: Please add a link to the github repo that relates to this request. You can find it within the submitted form.
-      placeholder: Example - https://github.com/opensafely/SRO-Measures
-    validations:
-      required: true
-  - type: input
-    attributes:
-      label: Workspace
-      description: Please add a link to the workspace that relates to this request. You can find it within the submitted form.
-      placeholder: Example - https://jobs.opensafely.org/datalab/service-restoration-observatory/sro-measures/
     validations:
       required: true
   - type: checkboxes
     id: type
     attributes:
-      label: Type
-      description: Please add a label indicating whether this is an internal or external review.
+      label: Coding system
+      description: Please select the coding system required (See this blog for further info on coding systems if needed - https://www.bennett.ox.ac.uk/blog/2023/06/an-introduction-to-clinical-codes-and-terminology-systems/.
+      options:
+        - label: SNOMED CT
+        - label: dm+d
+        - label: ICD-10
+        - label: Other (please detail in User Requirements)
+          required: false
+  - type: textarea
+    attributes:
+      label: Sensitivity versus specificity
+      description: Give an idea of what the balance should be (e.g. I only want to identify confirmed cases of COVID-19 versus I want to identify anyone with even a potential COVID-19 symptom).
+      placeholder: 
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Existing relevent codelists
+      description: Are you aware of any existing similar codelists? Why aren't these suitable to reuse?
+      placeholder: 
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: type
+    attributes:
+      label: Coding system
+      description: Please add a label indicating the type of codelist that is required..
       options:
         - label: I have added a label
           required: true
+
+
+  - type: textarea
+    attributes:
+      label: Search terms / synonyms
+      description: Any suggested search terms / synonyms (leave blank if not sure)
+      placeholder: 
+    validations:
+      required: false
+
   - type: checkboxes
     id: team
     attributes:
-      label: Team
-      description: If this is an internal review, please add a label  which team the review is for.
+      label: Type
+      description: Please add a label indicating the type of codelist that is required.
       options:
         - label: I have added a label
           required: true
