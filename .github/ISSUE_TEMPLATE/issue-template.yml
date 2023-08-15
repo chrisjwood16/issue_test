@@ -12,17 +12,17 @@ body:
       placeholder: 
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: codesys
     attributes:
       label: Coding system*
       description: Please select the coding system required (See this blog for further info on coding systems if needed - https://www.bennett.ox.ac.uk/blog/2023/06/an-introduction-to-clinical-codes-and-terminology-systems/.
       options:
-        - label: SNOMED CT
-        - label: dm+d
-        - label: ICD-10
-        - label: Other (please detail in User Requirements)
-        - label: I'm not sure (please detail intended use in User Requirements)
+        - SNOMED CT
+        - dm+d
+        - ICD-10
+        - Other (please detail in User Requirements)
+        - I'm not sure (please detail intended use in User Requirements)
           required: true
   - type: textarea
     attributes:
