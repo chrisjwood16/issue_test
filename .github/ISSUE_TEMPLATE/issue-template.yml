@@ -24,44 +24,52 @@ body:
     attributes:
       label: Sensitivity versus specificity
       description: If possible, give an idea of what the balance should be (e.g. I only want to identify confirmed cases of COVID-19 versus I want to identify anyone with even a potential COVID-19 symptom).
-      placeholder: N/A
+      placeholder: Leave blank if unsure
     validations:
       required: false
   - type: textarea
     attributes:
       label: Existing relevent codelists
       description: Are you aware of any existing similar codelists? Why aren't these suitable to reuse?
-      placeholder: N/A
+      placeholder: Leave blank if unsure
     validations:
       required: false
   - type: checkboxes
     id: type
     attributes:
       label: Coding system
-      description: Please add a label indicating the type of codelist that is required..
+      description: Please add a label indicating the type of codelist that is required.
       options:
         - label: I have added a label
           required: true
   - type: textarea
     attributes:
       label: Search terms / synonyms
-      description: Any suggested search terms / synonyms (leave blank if not sure)
-      placeholder: 
+      description: Any suggested search terms / synonyms
+      placeholder: Leave blank if unsure
     validations:
       required: false
-  - type: checkboxes
-    id: team
-    attributes:
-      label: Type
-      description: Please add a label indicating the type of codelist that is required.
-      options:
-        - label: I have added a label
-          required: true
   - type: textarea
-    id: details
     attributes:
-      label: Details
-      description: Please upload the completed review form by dragging and dropping the file in this box. Add any other details relevant to the review that are not in the review form.
-  - type: markdown
+      label: Inclusion Criteria for Codes
+      placeholder: Leave blank if unsure
+    validations:
+      required: false
+  - type: textarea
     attributes:
-      value: "**When you start a review please react to this message with :eyes:. When you have completed your review add a :thumbsup:. Once two reviews have been completed and a response has been sent to the requester, please close the issue.**"
+      label: Exclusion Criteria for Codes
+      placeholder: Leave blank if unsure
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Borderline cases
+      placeholder: Leave blank if unsure
+    validations:
+      required: false  
+  - type: input
+    attributes:
+      label: Final codelist
+      placeholder: Leave blank until completed
+    validations:
+      required: false
