@@ -24,6 +24,21 @@ body:
         - label: Other (please detail in User Requirements)
         - label: I'm not sure (please detail intended use in User Requirements)
           required: true
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - SNOMED CT
+        - dm+d
+        - ICD-10
+        - Other (please detail in User Requirements)
+        - I'm not sure (please detail intended use in User Requirements)
+      default: 0
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Sensitivity versus specificity
