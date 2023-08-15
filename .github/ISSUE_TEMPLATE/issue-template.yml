@@ -23,7 +23,20 @@ body:
         - ICD-10
         - Other (please detail in User Requirements)
         - I'm not sure (please detail intended use in User Requirements)
-          required: true
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: location
+    attributes:
+      label: Project Location
+      description: Where is the project located?
+      options:
+        - Local
+        - Remote
+        - Somewhere else (please specify in the description!)
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Sensitivity versus specificity
