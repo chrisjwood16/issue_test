@@ -4,11 +4,11 @@ title: '[Delete as appropriate] *CONDITION*/*PROCEDURE*/*TEST*: [TITLE]'
 body: 
   - type: markdown
     attributes:
-      value: "This template is designed to create a full template for codelist construction metadata.  have been completed and a response has been sent to the requester, please close the issue.**"
+      value: "This template is designed to create a full template for codelist construction metadata. You do not need to complete all sections as some will be completed during codelist construction. Sections marked with a * are required."
   - type: textarea
     attributes:
-      label: User Requirements
-      description: REQUIRED - Give an idea of what the purpose of the codelist is. Is there a particular study it is to be used in? What are you hoping to identify using the codelist? Will it be used along or in combination with other codelists? Generally the more information the better.
+      label: User Requirements*
+      description: Give an idea of what the purpose of the codelist is. Is there a particular study it is to be used in? What are you hoping to identify using the codelist? Will it be used along or in combination with other codelists? Generally the more information the better.
       placeholder: 
     validations:
       required: true
@@ -26,7 +26,7 @@ body:
           required: true
   - type: textarea
     attributes:
-      label: REQUIRED - Sensitivity versus specificity
+      label: Sensitivity versus specificity
       description: If possible, give an idea of what the balance should be (e.g. I only want to identify confirmed cases of COVID-19 versus I want to identify anyone with even a potential COVID-19 symptom).
       placeholder: Leave blank if unsure
     validations:
