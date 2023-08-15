@@ -1,10 +1,11 @@
 name: Medication codelist request
 description: Use to record medication codelists
 title: '*MEDICATION*: [TITLE]'
+labels: ["medication", "codelist"]
 body: 
   - type: markdown
     attributes:
-      value: "This template is designed to create a full template for codelist construction metadata. Sections marked with a * are required. You do not need to complete all sections when requesting as some will be completed during codelist construction."
+      value: "**This template is designed to create a full template for codelist construction metadata. Sections marked with a * are required. You do not need to complete all sections when requesting as some will be completed during codelist construction.**"
   - type: textarea
     attributes:
       label: User Requirements*
@@ -12,18 +13,20 @@ body:
       placeholder: 
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: codesys
     attributes:
       label: Coding system*
       description: Please select the coding system required (See this blog for further info on coding systems if needed - https://www.bennett.ox.ac.uk/blog/2023/06/an-introduction-to-clinical-codes-and-terminology-systems/.
       options:
-        - label: SNOMED CT
-        - label: dm+d
-        - label: ICD-10
-        - label: Other (please detail in User Requirements)
-        - label: I'm not sure (please detail intended use in User Requirements)
-          required: true
+        - dm+d
+        - SNOMED CT
+        - ICD-10
+        - Other (please detail in User Requirements)
+        - I'm not sure (please detail intended use in User Requirements)
+      default: dm+d        
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Sensitivity versus specificity
@@ -40,7 +43,10 @@ body:
       required: false
   - type: markdown
     attributes:
-      value: "*The sections below will usually be filled in during construction process rather than at initial request, leave blank if you are unsure*"
+      value: "***"
+  - type: markdown
+    attributes:
+      value: "**The sections below will usually be filled in during construction process rather than at initial request, leave blank if you are unsure**"
   - type: textarea
     attributes:
       label: Search terms / synonyms / search strategy

@@ -1,6 +1,7 @@
 name: Clinical codelist request
 description: Use to record condition/procedure/test codelists
 title: '[Delete as appropriate] *CONDITION*/*PROCEDURE*/*TEST*: [TITLE]'
+labels: ["codelist"]
 body: 
   - type: markdown
     attributes:
