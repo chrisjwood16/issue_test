@@ -1,4 +1,4 @@
-name: Clinical codelist request
+name: Medication codelist request
 description: Use to record medication codelists
 title: '*MEDICATION*: [TITLE]'
 body: 
