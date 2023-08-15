@@ -23,8 +23,7 @@ body:
         - SNOMED CT
         - ICD-10
         - Other (please detail in User Requirements)
-        - I'm not sure (please detail intended use in User Requirements)
-      default: dm+d        
+        - I'm not sure (please detail intended use in User Requirements)    
     validations:
       required: true
   - type: textarea
