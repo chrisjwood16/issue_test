@@ -4,7 +4,7 @@ title: '[Delete as appropriate] *CONDITION*/*PROCEDURE*/*TEST*: [TITLE]'
 body: 
   - type: markdown
     attributes:
-      value: "This template is designed to create a full template for codelist construction metadata. Sections marked with a * are required. You do not need to complete all sections when requesting as some will be completed during codelist construction."
+      value: "**This template is designed to create a full template for codelist construction metadata. Sections marked with a * are required. You do not need to complete all sections when requesting as some will be completed during codelist construction.**"
   - type: textarea
     attributes:
       label: User Requirements*
@@ -41,7 +41,10 @@ body:
       required: false
   - type: markdown
     attributes:
-      value: "*The sections below will usually be filled in during construction process rather than at initial request, leave blank if you are unsure*"
+      value: "***"
+  - type: markdown
+    attributes:
+      value: "**The sections below will usually be filled in during construction process rather than at initial request, leave blank if you are unsure**"
   - type: textarea
     attributes:
       label: Search terms / synonyms / search strategy
