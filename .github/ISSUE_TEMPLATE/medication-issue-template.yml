@@ -35,7 +35,7 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Existing relevent codelists
+      label: Existing relevant codelists
       description: Are you aware of any existing similar codelists? Why aren't these suitable to reuse?
       placeholder: Leave blank if unsure
     validations:
