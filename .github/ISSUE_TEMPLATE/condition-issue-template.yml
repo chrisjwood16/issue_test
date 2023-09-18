@@ -28,7 +28,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Sensitivity versus specificity
+      label: Sensitivity versus specificity / Relevent definitions
       description: If possible, give an idea of what the balance should be (e.g. I only want to identify confirmed cases of COVID-19 versus I want to identify anyone with even a potential COVID-19 symptom).
       placeholder: Leave blank if unsure
     validations:
