@@ -5,18 +5,18 @@ labels: ["codelist"]
 body: 
   - type: markdown
     attributes:
-      value: "**This template is designed to create a full template for codelist construction metadata. Sections marked with a * are required. You do not need to complete all sections when requesting as some will be completed during codelist construction.**"
+      value: "**This template is designed to compile complete codelist construction metadata. Sections marked with a * are mandatory. You do not need to complete all sections when requesting as some will be completed during codelist construction.**"
   - type: textarea
     attributes:
-      label: User Requirements*
-      description: Give an idea of what the purpose of the codelist is. Is there a particular study it is to be used in? What are you hoping to identify using the codelist? Will it be used along or in combination with other codelists? Generally the more information the better.
+      label: User requirements
+      description: What is the purpose of the codelist? Will the codelist be used in a particular study? Will it be used alone or in combination with other codelists? Generally the more information the better.
       placeholder: 
     validations:
       required: true
   - type: dropdown
     id: codesys
     attributes:
-      label: Coding system*
+      label: Coding system
       description: Please select the coding system required (See this blog for further info on coding systems if needed - https://www.bennett.ox.ac.uk/blog/2023/06/an-introduction-to-clinical-codes-and-terminology-systems/.
       options:
         - SNOMED CT
@@ -28,8 +28,15 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Sensitivity versus specificity / Relevent definitions
-      description: If possible, give an idea of what the balance should be (e.g. I only want to identify confirmed cases of COVID-19 versus I want to identify anyone with even a potential COVID-19 symptom).
+      label: Relevant definitions or links to important reference sources
+      description: If known, add any relevant definitions or important reference sources, which will aid codelist construction.
+      placeholder: Leave blank if unsure
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Sensitivity versus specificity / Relevant definitions
+      description: If possible, give an idea of what the balance should be, for example, I only want to identify confirmed cases of COVID-19 (more specific) versus I want to identify anyone with even a potential COVID-19 symptom (more sensitive).
       placeholder: Leave blank if unsure
     validations:
       required: false
