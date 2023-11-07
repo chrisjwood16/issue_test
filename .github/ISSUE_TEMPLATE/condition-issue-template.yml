@@ -9,7 +9,7 @@ body:
   - type: textarea
     attributes:
       label: User requirements
-      description: What is the purpose of the codelist? Will the codelist be used in a particular study? Will it be used alone or in combination with other codelists? Generally the more information the better.
+      description: Explain what the purpose of the codelist is and give context of how it will be used, including - /n What is the purpose of the codelist? Will the codelist be used in a particular study? Will it be used alone or in combination with other codelists? Generally the more information the better.
       placeholder: 
     validations:
       required: true
