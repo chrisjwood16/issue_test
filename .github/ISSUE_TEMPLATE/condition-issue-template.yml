@@ -5,7 +5,7 @@ labels: ["codelist"]
 body: 
   - type: markdown
     attributes:
-      value: "**This template is designed to compile complete codelist construction metadata. Sections marked with a * are mandatory. You do not need to complete all sections when requesting as some will be completed during codelist construction.**"
+      value: "**This template is designed to compile complete codelist construction metadata. Sections marked with a * are mandatory. Please note, you do not need to complete all sections when requesting as some will be completed during codelist construction.**"
   - type: textarea
     attributes:
       label: User requirements
@@ -36,8 +36,8 @@ body:
         - SNOMED CT
         - dm+d
         - ICD-10
-        - Other (please detail in User Requirements)
-        - I'm not sure (please detail intended use in User Requirements)
+        - Other (please detail in user requirements)
+        - I'm not sure (please detail intended use in user requirements)
     validations:
       required: true
   - type: textarea
@@ -62,13 +62,13 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Inclusion Criteria for Codes
+      label: Inclusion criteria for codes
       placeholder: Leave blank if unsure
     validations:
       required: false
   - type: textarea
     attributes:
-      label: Exclusion Criteria for Codes
+      label: Exclusion criteria for codes
       placeholder: Leave blank if unsure
     validations:
       required: false
