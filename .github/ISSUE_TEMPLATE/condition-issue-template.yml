@@ -56,7 +56,6 @@ body:
   - type: textarea
     attributes:
       label: Search terms / synonyms / search strategy
-      description: Any suggested search terms / synonyms
       placeholder: Leave blank if unsure
     validations:
       required: false
