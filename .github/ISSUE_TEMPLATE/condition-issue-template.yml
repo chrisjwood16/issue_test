@@ -9,15 +9,29 @@ body:
   - type: textarea
     attributes:
       label: User requirements
-      description: Explain what the purpose of the codelist is and give context of how it will be used, including - \n What is the purpose of the codelist? Will the codelist be used in a particular study? Will it be used alone or in combination with other codelists? Generally the more information the better.
+      description: Explain what the purpose of the codelist is and give context of how it will be used, including - What is the purpose of the codelist? Will the codelist be used in a particular study? Will it be used alone or in combination with other codelists/logic? Generally the more information the better.
       placeholder: 
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: Sensitivity versus specificity
+      description: If possible, give an idea of what the balance should be, for example, I only want to identify confirmed cases of COVID-19 (more specific) versus I want to identify anyone with even a potential COVID-19 symptom (more sensitive).
+      placeholder: Leave blank if unsure
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Relevant definitions or links to important reference sources
+      description: If known, add any relevant definitions or important reference sources, which will aid codelist construction.
+      placeholder: Leave blank if unsure
+    validations:
+      required: false
   - type: dropdown
     id: codesys
     attributes:
       label: Coding system
-      description: Please select the coding system required (See this blog for further info on coding systems if needed - https://www.bennett.ox.ac.uk/blog/2023/06/an-introduction-to-clinical-codes-and-terminology-systems/.
+      description: Please select the coding system required (See [this blog](https://www.bennett.ox.ac.uk/blog/2023/06/an-introduction-to-clinical-codes-and-terminology-systems/) for further info on coding systems if needed).
       options:
         - SNOMED CT
         - dm+d
@@ -28,22 +42,8 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Relevant definitions or links to important reference sources
-      description: If known, add any relevant definitions or important reference sources, which will aid codelist construction.
-      placeholder: Leave blank if unsure
-    validations:
-      required: false
-  - type: textarea
-    attributes:
-      label: Sensitivity versus specificity / Relevant definitions
-      description: If possible, give an idea of what the balance should be, for example, I only want to identify confirmed cases of COVID-19 (more specific) versus I want to identify anyone with even a potential COVID-19 symptom (more sensitive).
-      placeholder: Leave blank if unsure
-    validations:
-      required: false
-  - type: textarea
-    attributes:
       label: Existing relevant codelists
-      description: Are you aware of any existing similar codelists? Why aren't these suitable to reuse?
+      description: Are you aware of any existing similar codelists ([OpenCodelists](https://www.opencodelists.org/), [Primary Care Domain Refsets](https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/quality-and-outcomes-framework-qof/quality-and-outcome-framework-qof-business-rules/primary-care-domain-reference-set-portal))? Why aren't these suitable to reuse?
       placeholder: Leave blank if unsure
     validations:
       required: false
