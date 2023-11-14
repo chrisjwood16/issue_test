@@ -73,7 +73,7 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Borderline cases
+      label: Edge cases
       placeholder: Leave blank if unsure
     validations:
       required: false  
