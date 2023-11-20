@@ -16,7 +16,7 @@ body:
   - type: textarea
     attributes:
       label: Sensitivity versus specificity
-      description: If possible, give an idea of what the balance should be, for example,  I want to identify all medications that could be prescribed as an antidepressant (more sensitive), versus I only want to identify medications that are very likely to be prescribed as an antidepressant (more specific).
+      description: If possible, give an idea of what the balance should be, for example,  I want to identify all medications that could be prescribed as an antidepressant (more sensitive), versus I only want to identify medications that are very likely to be prescribed as an antidepressant (more specific). [Further info](https://en.wikipedia.org/wiki/Sensitivity_and_specificity).
       placeholder: Leave blank if unsure
     validations:
       required: false

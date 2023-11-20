@@ -1,6 +1,6 @@
 name: Clinical codelist request
 description: Use to record condition/procedure/test codelists
-title: '[Delete as appropriate] *CONDITION*/*PROCEDURE*/*TEST*: [TITLE]'
+title: '[Delete as appropriate] *CONDITION*/*PROCEDURE*/*TEST*/*OTHER*: [TITLE]'
 labels: ["codelist"]
 body: 
   - type: markdown
@@ -16,7 +16,7 @@ body:
   - type: textarea
     attributes:
       label: Sensitivity versus specificity
-      description: If possible, give an idea of what the balance should be, for example, I only want to identify confirmed cases of COVID-19 (more specific) versus I want to identify anyone with even a potential COVID-19 symptom (more sensitive).
+      description: If possible, give an idea of what the balance should be, for example, I only want to identify confirmed cases of COVID-19 (more specific) versus I want to identify anyone with even a potential COVID-19 symptom (more sensitive). [Further info](https://en.wikipedia.org/wiki/Sensitivity_and_specificity).
       placeholder: Leave blank if unsure
     validations:
       required: false
